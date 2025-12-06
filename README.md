@@ -55,25 +55,31 @@
 
    python news_summarizer.py
 
-3) 실행하면 아래와 비슷한 메뉴가 나옵니다.
+3) 뉴스기사 입력 메뉴
 
    ===== Korean News Summarizer =====
    1. 콘솔에 직접 한국어 뉴스 본문 입력 후 요약
    2. .txt 파일에서 한국어 뉴스 불러와 요약
    3. 종료
+   <img width="2555" height="1483" alt="스크린샷 2025-12-06 214503" src="https://github.com/user-attachments/assets/3e467ba5-1ed8-4241-96ca-26b957059c2b" />
 
-4) 메뉴 설명
 
-   - 1번: 콘솔에 기사 본문을 여러 줄로 붙여 넣고,
-          빈 줄에서 엔터를 치면 입력 종료 후 요약을 수행합니다.
+4) 글자수 요약 설정 메뉴
 
-   - 2번: "example.txt" 와 같은 텍스트 파일 경로를 입력하면
-          파일 내용을 불러와서 요약합니다.
+   1번: 짧은 요약
+   (대략 짧은 문장 위주, max_len=128, min_len=32)
 
-   - 3번: 프로그램을 종료합니다.
-<img width="2555" height="1483" alt="스크린샷 2025-12-06 214503" src="https://github.com/user-attachments/assets/3e467ba5-1ed8-4241-96ca-26b957059c2b" />
-<img width="2559" height="1484" alt="스크린샷 2025-12-06 214033" src="https://github.com/user-attachments/assets/98df8266-69c5-43f0-aab1-8ad0186252ac" />
-<img width="2546" height="1458" alt="스크린샷 2025-12-06 214014" src="https://github.com/user-attachments/assets/7d90d3f0-ebb3-4622-9cef-275364cb624f" />
+   2번: 기본 요약 (기본값)
+   (보통 뉴스 기사에 적당한 길이, max_len=256, min_len=64)
+
+   3번: 긴 요약
+   (좀 더 자세한 요약, max_len=384, min_len=96)
+
+   4번: 직접 길이 입력 (고급 설정)
+   max_len과 min_len 값을 직접 숫자로 입력해서 원하는 요약 길이를 설정할 수 있습니다.
+
+   <img width="2559" height="1484" alt="스크린샷 2025-12-06 214033" src="https://github.com/user-attachments/assets/98df8266-69c5-43f0-aab1-8ad0186252ac" />
+
 
 5) 요약이 끝나면 아래와 같이 결과가 나옵니다.
 
@@ -85,6 +91,7 @@
    - 요약 단어 수(공백 기준): 145
    - 압축 비율: XX.X% (요약/원문)
    - 단어 겹침 비율: XX.X% (원문 단어 집합 대비)
+   - <img width="2546" height="1458" alt="스크린샷 2025-12-06 214014" src="https://github.com/user-attachments/assets/7d90d3f0-ebb3-4622-9cef-275364cb624f" />
 
 --------------------------------
 5. 로그 파일 (logs/summary_log.csv)
