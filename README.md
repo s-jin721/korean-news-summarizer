@@ -91,7 +91,8 @@
    - 요약 단어 수(공백 기준): 145
    - 압축 비율: XX.X% (요약/원문)
    - 단어 겹침 비율: XX.X% (원문 단어 집합 대비)
-   - <img width="2546" height="1458" alt="스크린샷 2025-12-06 214014" src="https://github.com/user-attachments/assets/7d90d3f0-ebb3-4622-9cef-275364cb624f" />
+   - <img width="2555" height="1483" alt="스크린샷 2025-12-06 214503" src="https://github.com/user-attachments/assets/7a84fad6-6521-4924-8980-6a50f6f05335" />
+
 
 --------------------------------
 5. 로그 파일 (logs/summary_log.csv)
